@@ -11,10 +11,22 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
+    signingConfigs {
+
+        releaseConfig {
+                storeFile file("gradle_app_keystore.jks");
+                storePassword("chokkar");
+                keyAlias "GradleAppKey";
+                keyPassword "chokkar";
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
         }
     }
 }
