@@ -35,6 +35,19 @@ android {
             applicationIdSuffix ".debug"
         }
     }
+
+    productFlavors {
+
+        freeFlavour {
+            applicationId "com.gradle.example.free"
+        }
+
+        paidFlavour{
+            applicationId "com.gradle.example.paid"
+        }
+    }
+
+
 }
 
 dependencies {
