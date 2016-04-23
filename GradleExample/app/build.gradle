@@ -15,10 +15,10 @@ android {
     signingConfigs {
 
         releaseConfig {
-                storeFile file("gradle_app_keystore.jks");
-                storePassword("chokkar");
-                keyAlias "GradleAppKey";
-                keyPassword "chokkar";
+                storeFile file("gradle_app_keystore.jks")
+                storePassword("chokkar")
+                keyAlias "GradleAppKey"
+                keyPassword "chokkar"
         }
     }
 
